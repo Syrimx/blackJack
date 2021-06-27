@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css">
+		<title>Black Jack</title>
+		<link rel="icon" href="{{url_for('static', filename='media/cardBack.png')}}">
+	</head>
+
+	<body>
+		<div class="container">
+			<h1>Black Jack</h1>
+			<!--deck-->
+			<div class="deck">
+				<img src="{{url_for('static', filename='media/cardBack.png')}}">
+			</div>
+
+			<!--bank-->
+			<div class="bankKarten">
+
+			</div>
+
+			<!--eigene karten-->
+			<div class="eigeneKarten">
+
+			</div>
+
+			<div class="report">
+				<p class="kartenSumme"></p><br>
+			</div>
+
+			<input type="submit" class="ziehen" value="ziehen">
+			<input type="submit" class="aufdecken" value="aufdecken">
+			<input type="submit" class="neuladen" value="neuladen">
+
+		</div>
+		<script src="{{url_for('static', filename='main.js')}}"></script>
+	</body>
+</html>
